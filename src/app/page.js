@@ -11,7 +11,7 @@ const Page = async () => {
   if(!session)
     redirect("\login")
 
-  const res = await fetch("https://socials1212.vercel.app/api/getPosts",{cache:"no-store"})
+  const res = await fetch("https://socials1212.vercel.app/api/getPosts/noneed",{cache:"no-store"})
   const {posts} = await res.json()
   const user = await getCurrentUser()
   console.log(posts);

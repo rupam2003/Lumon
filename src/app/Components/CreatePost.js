@@ -59,8 +59,9 @@ const CreatePost = () => {
               
             }),
           })
-         router.refresh()
+         
           router.push("/")
+        router.refresh()
          
           console.log(response);
   

@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html data-theme="light" lang="en">
       <AuthProvider>
       
-      <body className={ `  ${inter.className}` }>
+      <body className={ `text-black  ${inter.className}` }>
       
       <NextTopLoader color="black" height={5}/>
         <div className="mx-auto flex justify-center ">

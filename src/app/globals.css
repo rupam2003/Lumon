@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+
+    
+}
+
+:root{
+    
+    background-color: white;
+}
+body{
+    height: 100vh;
+    
+}
+::-webkit-scrollbar{
+   
+     display: none; 
+}
+

@@ -61,9 +61,9 @@ const CreatePost = () => {
           })
          
           router.push("/")
-        router.refresh()
+          router.refresh()
          
-          console.log(response);
+          
   
       } catch (error) {
         console.log(error);

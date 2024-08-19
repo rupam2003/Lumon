@@ -3,11 +3,11 @@ import UserPost from "@/app/models/userpost"
 import { connectDb } from "@/app/utils/connectDb"
 import { NextResponse } from "next/server"
 
-export async function GET() {
+export async function GET(request) {
     try {
 
         await connectDb()
-        
+        console.log(request);
         const posts = await UserPost.find().populate("author")
         console.log(posts);
         

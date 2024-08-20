@@ -66,8 +66,8 @@ const SaveButton = ({currentUser , postId}) => {
         <div className='flex'>
             {
                 saved
-                ?<button onClick={handleRemoveLike}><GoBookmarkFill  className='mx-2 '/></button>
-                :<button onClick={handleLike}><GoBookmark className='mx-2  '/></button>
+                ?<button className='rounded-full p-2 hover:bg-slate-300 transition-colors' onClick={handleRemoveLike}><GoBookmarkFill   /></button>
+                :<button className='rounded-full p-2 hover:bg-slate-300 transition-colors' onClick={handleLike}><GoBookmark  /></button>
             }
             
         </div>  

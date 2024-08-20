@@ -1,4 +1,4 @@
-
+import User from "@/app/models/user"
 import UserPost from "@/app/models/userpost";
 import { connectDb } from "@/app/utils/connectDb"
 import { NextResponse } from "next/server"

@@ -36,7 +36,7 @@ const Card = ({post , currentUser}) => {
             </div>
             <h1 className='text-sm font-[450]'>{post.title}</h1>
 
-            <figure className=' w-full h-[350px] bg-slate-100 relative shadow-lg  rounded-xl my-2 '>
+            <figure className=' w-full md:h-[350px] h-[200px] bg-slate-100 relative shadow-lg  rounded-xl my-2 '>
         { post.image === ""
             ?<></>
 

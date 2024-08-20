@@ -68,8 +68,8 @@ const LikeButton = ({currentUserId , post}) => {
         <div className='flex'>
             {
                 like
-                ?<button onClick={handleRemoveLike}><GoHeartFill  className='mx-2 '/></button>
-                :<button onClick={handleLike}><GoHeart className='mx-2  '/></button>
+                ?<button className='rounded-full p-2 hover:bg-slate-300 transition-colors' onClick={handleRemoveLike}><GoHeartFill /></button>
+                :<button className='rounded-full p-2 hover:bg-slate-300 transition-colors' onClick={handleLike}><GoHeart/></button>
             }
             
             <h1 className='text-sm font-medium'>{likeCount}</h1>

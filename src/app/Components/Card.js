@@ -59,7 +59,7 @@ const Card = ({post , currentUser}) => {
           
           <LikeButton currentUserId={currentUser._id} post = {post}/>
           
-          <Link href={`/post/${post._id}`}><GoComment className=''/></Link>
+          <Link className='rounded-full p-2 hover:bg-slate-300 transition-colors' href={`/post/${post._id}`}><GoComment className=''/></Link>
           <SaveButton currentUser={currentUser} postId = {post._id}/>
           
         </div>

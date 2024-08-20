@@ -65,7 +65,7 @@ const LikeButton = ({currentUserId , post}) => {
   }
   return (
 
-        <div className='flex'>
+        <div className='flex items-center'>
             {
                 like
                 ?<button className='rounded-full p-2 hover:bg-slate-300 transition-colors' onClick={handleRemoveLike}><GoHeartFill /></button>

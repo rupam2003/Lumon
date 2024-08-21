@@ -28,10 +28,6 @@ const Page = async () => {
       }
       
       
-      <h1>{session?.user?.name}</h1>
-      
-      <Link href={"/create"}>create</Link>
-      
     </div>
     </>
     

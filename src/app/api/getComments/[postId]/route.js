@@ -1,6 +1,7 @@
 
 import Comment from "@/app/models/comments"
-
+import UserPost from "@/app/models/userpost"
+import User from "@/app/models/user"
 import { connectDb } from "@/app/utils/connectDb"
 import { NextResponse } from "next/server"
 

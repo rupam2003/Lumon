@@ -6,6 +6,7 @@ import { BsBookmark } from "react-icons/bs";
 import Link from 'next/link';
 import { signOut } from 'next-auth/react';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 
 const rochester = Pacifico({ 
@@ -17,15 +18,15 @@ const SideNav = () => {
   const pathname = usePathname()
   return (
 
-    <div className={`${pathname == "/login" ? "hidden" : "md:grid"} drawer sticky top-0  hidden   drawer-open h-[100vh] w-36 mr-5  `}>
+    <div className={`${pathname == "/login" ? "hidden" : "md:grid"} drawer sticky top-0  hidden   drawer-open h-[100vh] w-36 mr-5 m  `}>
   <input id="my-drawer" type="checkbox" className="drawer-toggle" />
   
   <div className="  h-[80vh] ">
     <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+    <div className='relative h-[25px] w-[145px] mb-8 mt-4'><Image src={"\logo.png"} fill/></div>
     <ul className=" w-36">
       {/* Sidebar content here */}
-      <h1 key={"logo"} className={`text-3xl font-bold ${rochester.className}`}></h1>
-
+      
       <li key={"Home"}      className={`${pathname =="/" ? "border-black": "border-transparent hover:bg-slate-200"} my-4 p-2 border-2  rounded-full font-bold transition-colors`}><Link href={"/"} className='flex items-center '><GoHome  className=' text-2xl mr-2'/>Home</Link></li>
       <li key={"profile"}   className={`${pathname =="/profile" ? "border-black": "border-transparent hover:bg-slate-200"} my-4 p-2 border-2 rounded-full font-bold transition-colors`}><Link href={"/profile"} className=' flex items-center '><GoPerson className='text-2xl   mr-2'/>Profile</Link></li>
       <li key={"create"}    className={`${pathname =="/create" ? "border-black": "border-transparent hover:bg-slate-200"} my-4 p-2 border-2 rounded-full font-bold transition-colors`}><Link href={"/create"} className=' flex items-center '><GoPlusCircle  className='text-2xl   mr-2'/>Create</Link></li>

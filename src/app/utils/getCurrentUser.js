@@ -1,7 +1,7 @@
 import { headers } from "next/headers"
 
 export const getCurrentUser = async () =>{
-    const res = await fetch("https://socials1212.vercel.app/api/getCurrentUser" ,{ 
+    const res = await fetch("https://lum-on.vercel.app/api/getCurrentUser" ,{ 
         headers: Object.fromEntries(headers())
        },
        { cache : "no-store"}

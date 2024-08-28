@@ -11,7 +11,7 @@ const Card = ({post , currentUser}) => {
   
   console.log(post);
   const date = getDate(post.createdAt)
-  
+  const img_url = post.image.slice(0,48) + "/w_600/q_auto:best" + post.image.slice(48)
   
   return (
     <div key={post._id} className='w-full py-5 border-b-[1px] border-[rgb(219, 219, 219)] shadow-slate-200  flex justify-center'>
@@ -47,7 +47,7 @@ const Card = ({post , currentUser}) => {
                 // style={{ width: 'auto', height: 'auto' ,  }} 
                 draggable={false} 
                 className='rounded-xl object-contain' 
-                src={post.image} 
+                src={img_url} 
                 fill
                 // width={0} 
                 // height={0} 

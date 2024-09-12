@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { getServerSession } from 'next-auth'
 const RightNav = async () => {
 
-  const res = await fetch(`https://lum-on.vercel.app//api/getUsers`)
+  const res = await fetch(`https://lum-on.vercel.app//api/getUsers,{cache:"no-store"}`)
   const {users} = await res.json()
   console.log(users);
   const session = await getServerSession()

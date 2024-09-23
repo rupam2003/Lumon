@@ -14,6 +14,7 @@ const Page = async () => {
   const res = await fetch("https://socials1212.vercel.app/api/getPosts/noneed",{cache:"no-store"})
   const {posts} = await res.json()
   const user = await getCurrentUser()
+  posts.reverse()
   console.log(posts);
   return (
     <>

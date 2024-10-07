@@ -14,7 +14,7 @@ const SaveButton = ({currentUser , postId}) => {
     const handleLike = async (e) =>{
         e.preventDefault()
         try {
-          const res = await fetch("https://lum-on.vercel.app//api/save" , {
+          const res = await fetch("https://lum-on.vercel.app/api/save" , {
             method: "POST",
               headers:{
                 "Content-Type" : "application/json",

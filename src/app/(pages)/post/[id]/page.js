@@ -34,7 +34,7 @@ const Page = async ({params}) => {
 <h1 className='m-3 text-lg font-bold'>{comments.length} Comments </h1>
 {/* All comments */}
         {comments.length === 0
-        ?<h1>Be the first to comment</h1>
+        ?<h1 className='text-center font-semibold' >Be the first to comment</h1>
         :comments.map((e)=>{
           return <div className='flex gap-3 py-3 border-b-[1px] border-[rgb(219, 219, 219)]'>
             <figure className='min-w-[30px] w-[30px] ml-2'>

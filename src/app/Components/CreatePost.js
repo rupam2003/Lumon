@@ -73,7 +73,7 @@ const CreatePost = () => {
 
     <div className='flex flex-col items-center'>
     {/* post preview */}
-    <h1 className='font-bold'>Post preview</h1>
+    <h1 className='m-3 text-xl font-bold'>Create post</h1>
     {session
     ?    <div key={"preview"} className='w-full py-5 border-b-[1px] border-[rgb(219, 219, 219)] shadow-slate-200  flex justify-center'>
         <figure className='min-w-[35px] w-[35px] ml-2'>

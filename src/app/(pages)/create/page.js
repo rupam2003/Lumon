@@ -8,7 +8,7 @@ const Page = async () => {
     redirect("\login")
   return (
     <>
-    <h1>{session.user.id}</h1>
+    
     <CreatePost/>
     </>
     

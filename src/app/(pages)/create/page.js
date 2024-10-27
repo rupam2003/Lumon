@@ -8,7 +8,7 @@ const Page = async () => {
     redirect("\login")
   return (
     <>
-    
+    <h1 className='m-3 text-xl font-bold'>Create post</h1>
     <CreatePost/>
     </>
     
